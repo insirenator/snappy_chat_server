@@ -102,7 +102,7 @@ export const paymentVerification = async (req, res, next) => {
       })
 
 
-      res.redirect(`http://localhost:5173/paymentSuccess?reference=${razorpay_payment_id}`);
+      res.redirect(`https://jazzy-fenglisu-c6d5a4.netlify.app/paymentSuccess?reference=${razorpay_payment_id}`);
     }
     else {
       res.status(400).json({ status: false });
