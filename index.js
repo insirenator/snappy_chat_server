@@ -37,7 +37,7 @@ const server = app.listen(process.env.PORT, () => {
 
 const io = new Server(server, {
     cors: {
-        origin: "https://jazzy-fenglisu-c6d5a4.netlify.app/",
+        origin: "https://jazzy-fenglisu-c6d5a4.netlify.app",
         credentials: true,
     }
 });
