@@ -146,7 +146,7 @@ const avatars = [
 
 async function populate() {
     try{
-        await mongoose.connect("mongodb://127.0.0.1:27017/snappy_chat");
+        await mongoose.connect("mongodb+srv://shakeeb:1491012@mycluster.ljqz9s3.mongodb.net/snappy_chat?retryWrites=true&w=majority");
         console.log("Connection successful!");
 
         for (let avatar of avatars) {

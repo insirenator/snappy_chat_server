@@ -27,7 +27,7 @@ app.get("/logo", (req, res) => {
     res.sendFile(__dirname + "/logo.svg");
 })
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_ATLAS_URL)
     .then(() => console.log("Database Connected"))
     .catch((err) => console.error(err.message));
 
